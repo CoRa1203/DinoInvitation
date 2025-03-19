@@ -102,7 +102,7 @@ function App() {
           <div className="button-container5">
             <button
               onClick={() =>
-                openModal("Доп.люди", <img src={guestsImg} className="gift" alt="доп.люди" />, [], 'Вход строго по приглашению!')
+                openModal("Доп.люди", <img src={guestsImg} className="gift" alt="доп.гости" />, [], 'Вход строго по приглашению!')
               }
               className="info-block block5"
             >
