@@ -134,8 +134,8 @@ function App() {
           <div className="lowerInfoContent">
             <h1>Придешь к динозаврику на праздник? </h1>
             <div className="submitBtns">
-           <a href="#" className="contactLink"><Button text="Да" /></a> 
-           <a href="#" className="contactLink"><Button text="Нет" /></a> 
+           <a href="https://web.telegram.org/a/" className="contactLink"><Button text="Да" /></a> 
+           <a href="https://web.telegram.org/a/" className="contactLink"><Button text="Нет" /></a> 
             </div>
           </div>
         </div>
