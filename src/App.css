@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Marck+Script&display=swap');
+
+/*.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  all: unset;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+input {
+  background: none;
+}
+input:focus {
+  outline: none;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+.App {
+  background-color: #FAF6F5;
+  height: 100vh;
+  width: 100%;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #592C17;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  max-width: 122rem; /*ширина контейнера / font-size*/
+  gap: 1rem;
+}
+.h1 {
+  padding-top: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-align: center;
+  position: relative;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+}
+.smallText{
+  font-size: 0.9rem;
+position: absolute;
+left: 38%;
+top: 4%;
+line-height: 0.8rem;
+font-weight: 700;
+transition: 0.5s;
+}
+.smallText:hover{
+  transform: scale(2);
+  transition: 0.5s;
+}
+
+.content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.info-block-photo {
+  position: absolute;
+}
+.photo {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+.info-block {
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Lora", serif;
+  box-shadow: 0px 0px 10px rgba(89, 44, 23, 0.1);
+  border-radius: 30% 60% 20% 80% / 40% 50% 50% 50%;
+  padding: 2% 2.5%;
+  z-index: 100;
+  background-color: #FAF6F5;
+}
+.hoverPhoto {
+  top: -80%;
+  left: 15%;
+  width: 100%;
+  z-index: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+
+.gift{
+  height: 100%;
+  border-radius: 16px;
+}
+.block1:hover .hoverPhoto {
+  left: 10%;
+  transform: translateX(-100%);
+  transition: 1s;
+  opacity: 1;
+}
+.block1 {
+  top: 10%;
+  left: 12%;
+  transition: 0.5s;
+}
+
+.block1:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.hoverPhoto2 {
+  top: -80%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+.block2 {
+  top: 10%;
+  right: 12%;
+  transition: 0.5s;
+}
+.block2:hover .hoverPhoto2 {
+  right: 10%;
+  transform: translateX(70%);
+  transition: 1s;
+  opacity: 1;
+}
+.block2:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.block3 {
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+.hoverPhoto3 {
+  top: -80%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+.block3:hover .hoverPhoto3 {
+  left: 10%;
+  transform: translateX(120%);
+  transition: 1s;
+  opacity: 1;
+}
+.block3:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.block4 {
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+.hoverPhoto4 {
+  top: -80%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+.block4:hover .hoverPhoto4 {
+  left: 10%;
+  transform: translateX(-100%);
+  transition: 1s;
+  opacity: 1;
+}
+.block4:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.block5 {
+  bottom: 10%;
+  left: 12%;
+  transition: 0.5s;
+}
+.hoverPhoto5 {
+  top: -80%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+.block5:hover .hoverPhoto5 {
+  left: 10%;
+  transform: translateX(-100%);
+  transition: 1s;
+  opacity: 1;
+}
+.block5:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.block6 {
+  bottom: 10%;
+  right: 12%;
+  transition: 0.5s;
+}
+.hoverPhoto6 {
+  top: -80%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 16px;
+}
+.block6:hover .hoverPhoto6 {
+  left: 10%;
+  transform: translateX(120%);
+  transition: 1s;
+  opacity: 1;
+}
+.block6:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.lowerInfo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+}
+.submitBtns {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  font-size: 1.3rem;
+  padding-top: 1.2rem;
+  font-family: "Lora", serif;
+  
+}
+.contactLink{
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px rgba(89, 44, 23, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 30% 60% 20% 80% / 40% 50% 50% 50%;
+}
+.contactLink:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px rgba(89, 44, 23, 0.3);
+}
+
+@media (max-width: 1363px){
+  .h1::before {
+    right: 15%;
+    top: 90%;
+  }
+}
+
+@media (max-width: 960px){
+  .App {
+    height: auto;
+  }
+  .info-block {
+    position: relative;
+    width: 95%;
+    z-index: 0;
+  }
+  .content {
+flex-direction: column;
+gap: 2rem;
+  }
+  .button-container1{
+    width: 100% ;
+  }
+  .button-container2{
+    width: 100% ;
+  }
+  .button-container3{
+    width: 100% ;
+  }
+  .button-container4{
+    width: 100% ;
+  }
+  .button-container5{
+    width: 100% ;
+  }
+  .button-container6{
+    width: 100% ;
+  }
+  .block1{
+    top: 0;
+    left: 0;
+  }
+  .block2{
+    top: 0;
+    left: 0;
+  }
+  .block3{
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
+  .block4{
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
+  .block5{
+    top: 0;
+    left: 0;
+  }
+  .block6{
+    top: 0;
+    left: 0;
+  }
+  .hoverPhoto {
+    width: 0;
+  }
+  .hoverPhoto2 {
+    width: 0;
+  }
+  .hoverPhoto3 {
+    width: 0;
+  }
+  .hoverPhoto4 {
+    width: 0;
+  }
+  .hoverPhoto5 {
+    width: 0;
+  }
+  .hoverPhoto6 {
+    width: 0;
+  }
+  .photo {
+    width: 90%;
+  }
+  .h1::before {
+    right: 15%;
+    top: 70%;
+  }
+  .smallText{
+  left: 35%;
+  }
+}
+
+@media (max-width: 861px){
+  .h1::before {
+    right: 1%;
+    top: 95%;
+  }
+}
+@media (max-width: 567px){
+  .h1::before {
+    right: 1%;
+    top: 100%;
+  }
+  .smallText{
+    font-size: 0.8rem;
+  position: absolute;
+  left: -1%;
+ 
+  }
+  .photo {
+    width: 100%;
+  }
+}

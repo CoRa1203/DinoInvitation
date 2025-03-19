@@ -1,0 +1,34 @@
+.accordion {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+  }
+  
+  .accordionHeader p {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .accordionHeader span {
+    font-size: 1.2rem;
+  }
+  
+  .accordionContent {
+    padding: 10px;
+
+    font-size: 1.2rem;
+  }
+  .accordionArrow{
+    width: 32px;
+    height: 32px;
+  }
